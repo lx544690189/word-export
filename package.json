@@ -1,10 +1,20 @@
 {
-  "name": "html-to-doc",
+  "name": "word-export",
   "version": "0.1.0",
-  "private": true,
+  "description": "react右键菜单",
+  "keywords": [
+    "react",
+    "contextMenu",
+    "menu",
+    "菜单"
+  ],
+  "main": "dist/wordExport.js",
+  "types": "lib/interface.d.ts",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build-docs": "vue-cli-service build --dest docs",
+    "build-lib": "vue-cli-service build --target lib --name wordExport --dest dist 'lib/index.ts'",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
