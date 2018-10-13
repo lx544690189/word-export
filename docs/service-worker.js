@@ -14,10 +14,10 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.d773f26d2a3375a9421797389ee4d661.js"
+  "precache-manifest.efc2a71ddbb8eb378027642d3a9bc74a.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "html-to-doc"});
+workbox.core.setCacheNameDetails({prefix: "word-export"});
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
