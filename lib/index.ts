@@ -1,5 +1,5 @@
 import { optionsProps } from './interface';
-import {saveAs} from 'file-saver';
+import { saveAs } from 'file-saver';
 
 /** html转换 */
 export default class WordExport {
@@ -19,25 +19,28 @@ export default class WordExport {
   }
 
   public export() {
-    const {name, content, href, style} = this.config;
+    const { name, content, href, style } = this.config;
     const template = `Mime-Version: 1.0
 Content-Base: ${href}
 Content-Type: Multipart/related; boundary="NEXT.ITEM-BOUNDARY";type="text/html"
 --NEXT.ITEM-BOUNDARY
 Content-Type: text/html; charset="utf-8"
 Content-Location: ${href}
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
-  <style>
-    ${style}
-  </style>
-  ${content}
+
+<style>${style}</style>
+
+${content}
+
 </body>
 </html>
+
 --NEXT.ITEM-BOUNDARY
 Content-Location: ${href}
 Content-Type: data:
