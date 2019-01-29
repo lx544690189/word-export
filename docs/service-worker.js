@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.efc2a71ddbb8eb378027642d3a9bc74a.js"
+  "precache-manifest.58eb530496a6f3c364a1c10f78795c76.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "word-export"});

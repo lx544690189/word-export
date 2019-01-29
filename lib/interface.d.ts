@@ -1,6 +1,13 @@
 // https://segmentfault.com/a/1190000009247663
 
-/** 测试测试 */
-export declare interface TestProps {
-  data: string,
+/** export options */
+export declare interface optionsProps {
+  /** file name */
+  name?: string,
+  /** file content(html element) */
+  content: string,
+  /** word header information */
+  href?: string,
+  /** content style */
+  style?:string,
 }
